@@ -45,21 +45,21 @@ When finished, stop the server by entering `Ctrl-C`.
 
 ###  Running with Docker
 
+If you have [Docker Desktop] installed, you can build and run with the
+`docker` command:
+
 > WARNING!
 > 
 > Until the Docker image for Dart has been published as an official
-> image, this example will not work on Cloud Run. You can still run this on
-> your machine with Docker by cloning [dart-docker] and building the image
-> locally, as shown in the next two lines:
+> image, this example will fail unless you build the `dart:stable` image on
+> your own machine. You can build the image with Docker by cloning [dart-docker]
+> and running the following commands:
 > 
 > ```shell
 > cd stable/buster
 > docker build -t dart:stable .
 > ```
 > The rest of this example will then work.
-
-If you have [Docker Desktop] installed, you can build and run with the
-`docker` command:
 
 ####  Terminal #1
 
